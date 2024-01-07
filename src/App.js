@@ -14,6 +14,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import JsonApp from "./jsonLesson/JsonApp";
 import ChartsComp from "./chartsLib/ChartsComp";
 import UseState from "./hookTutorial/UseState";
+import Modals from "./modalPlugin/Modals";
 
 
 function App() {
@@ -32,7 +33,10 @@ function App() {
 
             {/* <ChartsComp /> */}
 
-            <UseState />
+            {/* <UseState /> */}
+
+            <Modals />
+
         </>
     );
 }
