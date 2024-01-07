@@ -12,6 +12,7 @@ import About from "./About";
 import Nav from "./Nav";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import JsonApp from "./jsonLesson/JsonApp";
+import ChartsComp from "./chartsLib/ChartsComp";
 
 
 function App() {
@@ -25,7 +26,10 @@ function App() {
                     <Route path="/about" element={<About />}/>
                 </Routes>
             </HashRouter> */}
-            <JsonApp />
+
+            {/* <JsonApp /> */}
+
+            <ChartsComp />
         </>
     );
 }
