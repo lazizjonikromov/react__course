@@ -1,0 +1,15 @@
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.big__text{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.description{
+    color: yellow;
+}

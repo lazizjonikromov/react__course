@@ -38,7 +38,7 @@ function App() {
 
             {/* <Modals /> */}
 
-            <CarouselAlice />
+            {/* <CarouselAlice /> */}
 
         </>
     );
