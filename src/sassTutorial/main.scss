@@ -1,0 +1,31 @@
+.box{
+    background-color: green;
+    width: 300px;
+    padding: 20px;
+
+    h1{
+        font-weight: 800;
+        color: yellow;
+    }
+
+    p{
+        color: white;
+
+        &:nth-child(3){
+            color: red;
+        }
+    }
+
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+
+        p{
+            &:nth-child(3){
+                color: aqua;
+            }
+        }
+    }
+
+
+}

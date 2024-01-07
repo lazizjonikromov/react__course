@@ -6,6 +6,7 @@ import Lesson1 from "./stateLesson/Lesson1";
 import Counter from "./stateLesson/Counter";
 import Lifecycle1 from "./lifecycleLesson/Lifecycle1";
 import Backend from "./APITutorial/Backend";
+import SassTutorial from './sassTutorial/SassTutorial';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
             {/* <Lesson1 /> */}
             {/* <Counter /> */}
             {/* <Lifecycle1 /> */}
-            <Backend />
+            {/* <Backend /> */}
+            <SassTutorial />
         </div>
     );
 }
