@@ -7,22 +7,34 @@ import Counter from "./stateLesson/Counter";
 import Lifecycle1 from "./lifecycleLesson/Lifecycle1";
 import Backend from "./APITutorial/Backend";
 import SassTutorial from './sassTutorial/SassTutorial';
+import Blog from './Blog';
+import About from "./About";
+import Nav from "./Nav";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 
 function App() {
     return (
-        <div className="App">
-            {/* <MyApp />
-            <MyApp2 /> */}
-            {/* <Components1 name="Laziz" age="17"/>
-            <Components2 text="Profesional Frontend Developer"/> */}
-            {/* <Lesson1 /> */}
-            {/* <Counter /> */}
-            {/* <Lifecycle1 /> */}
-            {/* <Backend /> */}
-            <SassTutorial />
-        </div>
+        <>
+            <HashRouter>
+                <Nav />
+                <Routes>
+                    <Route path="/" element={<Home />}/>
+                    <Route path="/blog" element={<Blog />}/>
+                    <Route path="/about" element={<About />}/>
+                </Routes>
+            </HashRouter>
+        </>
     );
+}
+
+const Home = () =>{
+    return(
+        <>
+            <h1>Home</h1>
+            <p>This is home page</p>
+        </>
+    )
 }
 
 export default App;

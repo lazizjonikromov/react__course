@@ -1,0 +1,29 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: indigo;
+}
+
+.nav .nav__brand{
+    font-size: 20px;
+    color: ivory;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    margin: 10px;
+    list-style: none;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
