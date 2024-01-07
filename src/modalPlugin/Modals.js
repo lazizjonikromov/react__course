@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import './main.scss';
+import AliceCarousel from 'react-alice-carousel';
+
+    const handleDragStart = (e) => e.preventDefault();
+
+    const items = [
+        <img src="/images/img1.jpg" onDragStart={handleDragStart} role="presentation" />,
+        <img src="/images/img2.jpg" onDragStart={handleDragStart} role="presentation" />,
+        <img src="/images/img3.jpg" onDragStart={handleDragStart} role="presentation" />
+    ];
 
 const Modals = () => {
 
@@ -18,6 +27,8 @@ const Modals = () => {
             <button className="btn-primary" onClick={() => setOpen(true)}>
                 VIEW DEMO
             </button>
+
+            <AliceCarousel mouseTracking items={items} /> 
         </>
     );
 };

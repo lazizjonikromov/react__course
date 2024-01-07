@@ -15,6 +15,7 @@ import JsonApp from "./jsonLesson/JsonApp";
 import ChartsComp from "./chartsLib/ChartsComp";
 import UseState from "./hookTutorial/UseState";
 import Modals from "./modalPlugin/Modals";
+import CarouselAlice from "./PluginCarouselAlice/CarouselAlice";
 
 
 function App() {
@@ -35,7 +36,9 @@ function App() {
 
             {/* <UseState /> */}
 
-            <Modals />
+            {/* <Modals /> */}
+
+            <CarouselAlice />
 
         </>
     );
