@@ -11,19 +11,21 @@ import Blog from './Blog';
 import About from "./About";
 import Nav from "./Nav";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import JsonApp from "./jsonLesson/JsonApp";
 
 
 function App() {
     return (
         <>
-            <HashRouter>
+            {/* <HashRouter>
                 <Nav />
                 <Routes>
                     <Route path="/" element={<Home />}/>
                     <Route path="/blog" element={<Blog />}/>
                     <Route path="/about" element={<About />}/>
                 </Routes>
-            </HashRouter>
+            </HashRouter> */}
+            <JsonApp />
         </>
     );
 }

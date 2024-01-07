@@ -1,0 +1,23 @@
+[
+    {   
+        "name" : "Ikromov Laziz",
+        "age" : 17,
+        "isStudent" : true,
+        "country" : "Uzbekistan",
+        "phone" : 998946408356
+    },
+    {
+        "name" : "Ikromov Aziz",
+        "age" : 19,
+        "isStudent" : true,
+        "country" : "UK",
+        "phone" : 998935067909
+    },
+    {
+        "name" : "Ikromov Baxodir",
+        "age" : 17,
+        "isStudent" : false,
+        "country" : "USA",
+        "phone" : 998946408356
+    }
+]
