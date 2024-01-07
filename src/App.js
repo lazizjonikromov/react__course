@@ -13,6 +13,7 @@ import Nav from "./Nav";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import JsonApp from "./jsonLesson/JsonApp";
 import ChartsComp from "./chartsLib/ChartsComp";
+import UseState from "./hookTutorial/UseState";
 
 
 function App() {
@@ -29,7 +30,9 @@ function App() {
 
             {/* <JsonApp /> */}
 
-            <ChartsComp />
+            {/* <ChartsComp /> */}
+
+            <UseState />
         </>
     );
 }
