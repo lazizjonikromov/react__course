@@ -22,6 +22,7 @@ import LazyLoadImg from "./lazyLoadImage/LazyLoadImg";
 import PostLesson from "./Methods/POST/PostLesson";
 import GetLesson from "./Methods/GET/GetLesson";
 import PutLesson from "./Methods/PUT/PutLesson";
+import DeleteLesson from "./Methods/DELETE/DeleteLesson";
 
 
 function App() {
@@ -56,7 +57,9 @@ function App() {
 
             {/* <PostLesson /> */}
 
-            <PutLesson />
+            {/* <PutLesson /> */}
+
+            <DeleteLesson />
 
         </>
     );
