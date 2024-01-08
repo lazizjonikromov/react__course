@@ -24,50 +24,23 @@ import GetLesson from "./Methods/GET/GetLesson";
 import PutLesson from "./Methods/PUT/PutLesson";
 import DeleteLesson from "./Methods/DELETE/DeleteLesson";
 import Joke from "./skeletonTutorial/Joke";
-import './skeletonTutorial/style.css';
+import { Context } from "./contextTut/Context";
+import Display from "./Display";
+// import './skeletonTutorial/style.css';
 
 
 function App() {
 
-    const [joke, setJoke] = useState({});
-    const [loading, setLoading] = useState(false);
-
-    const getNewJoke = () => {
-        setLoading(true);
-        fetch('https://api.chucknorris.io/jokes/random')
-            .then(response => response.json())
-            .then(data => {
-                const {icon_url, value} = data;
-                setJoke({icon_url, value});
-                setLoading(false);
-                console.log(data);
-            })
-    }
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            getNewJoke();
-        }, 5000)
-
-        return () => clearTimeout(timer);
-    }, [])
+    const personName = "Ikromov Laziz";
 
     return (
         <>
-            
-            <Joke joke={joke} loading={loading} getNewJoke={getNewJoke} />
-
+            <Context.Provider value={personName}>
+                <Display />
+            </Context.Provider>
         </>
     );
-}
 
-const Home = () =>{
-    return(
-        <>
-            <h1>Home</h1>
-            <p>This is home page</p>
-        </>
-    )
 }
 
 export default App;
