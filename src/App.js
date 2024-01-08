@@ -16,6 +16,7 @@ import ChartsComp from "./chartsLib/ChartsComp";
 import UseState from "./hookTutorial/UseState";
 import Modals from "./modalPlugin/Modals";
 import CarouselAlice from "./PluginCarouselAlice/CarouselAlice";
+import UseEffect from "./hookTutorial/UseEffect";
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
             {/* <Modals /> */}
 
             {/* <CarouselAlice /> */}
+
+            <UseEffect />
 
         </>
     );
