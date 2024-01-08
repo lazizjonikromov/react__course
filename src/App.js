@@ -19,6 +19,7 @@ import CarouselAlice from "./PluginCarouselAlice/CarouselAlice";
 import UseEffect from "./hookTutorial/UseEffect";
 import AosTutorial1 from "./scrollEffect/AosTutorial1";
 import LazyLoadImg from "./lazyLoadImage/LazyLoadImg";
+import PostLesson from "./Methods/POST/PostLesson";
 
 
 function App() {
@@ -47,7 +48,9 @@ function App() {
 
             {/* <AosTutorial1 /> */}
 
-            <LazyLoadImg />
+            {/* <LazyLoadImg /> */}
+
+            <PostLesson />
 
         </>
     );
