@@ -21,6 +21,7 @@ import AosTutorial1 from "./scrollEffect/AosTutorial1";
 import LazyLoadImg from "./lazyLoadImage/LazyLoadImg";
 import PostLesson from "./Methods/POST/PostLesson";
 import GetLesson from "./Methods/GET/GetLesson";
+import PutLesson from "./Methods/PUT/PutLesson";
 
 
 function App() {
@@ -51,9 +52,11 @@ function App() {
 
             {/* <LazyLoadImg /> */}
 
-            <GetLesson />
+            {/* <GetLesson /> */}
 
             {/* <PostLesson /> */}
+
+            <PutLesson />
 
         </>
     );
