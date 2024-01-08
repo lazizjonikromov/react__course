@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MyApp from './components/MyApp';
 import MyApp2 from "./components/MyApp2";
 import Components1 from "./propsTutorial/Components1";
@@ -23,43 +23,39 @@ import PostLesson from "./Methods/POST/PostLesson";
 import GetLesson from "./Methods/GET/GetLesson";
 import PutLesson from "./Methods/PUT/PutLesson";
 import DeleteLesson from "./Methods/DELETE/DeleteLesson";
+import Joke from "./skeletonTutorial/Joke";
+import './skeletonTutorial/style.css';
 
 
 function App() {
+
+    const [joke, setJoke] = useState({});
+    const [loading, setLoading] = useState(false);
+
+    const getNewJoke = () => {
+        setLoading(true);
+        fetch('https://api.chucknorris.io/jokes/random')
+            .then(response => response.json())
+            .then(data => {
+                const {icon_url, value} = data;
+                setJoke({icon_url, value});
+                setLoading(false);
+                console.log(data);
+            })
+    }
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            getNewJoke();
+        }, 5000)
+
+        return () => clearTimeout(timer);
+    }, [])
+
     return (
         <>
-            {/* <HashRouter>
-                <Nav />
-                <Routes>
-                    <Route path="/" element={<Home />}/>
-                    <Route path="/blog" element={<Blog />}/>
-                    <Route path="/about" element={<About />}/>
-                </Routes>
-            </HashRouter> */}
-
-            {/* <JsonApp /> */}
-
-            {/* <ChartsComp /> */}
-
-            {/* <UseState /> */}
-
-            {/* <Modals /> */}
-
-            {/* <CarouselAlice /> */}
-
-            {/* <UseEffect /> */}
-
-            {/* <AosTutorial1 /> */}
-
-            {/* <LazyLoadImg /> */}
-
-            {/* <GetLesson /> */}
-
-            {/* <PostLesson /> */}
-
-            {/* <PutLesson /> */}
-
-            <DeleteLesson />
+            
+            <Joke joke={joke} loading={loading} getNewJoke={getNewJoke} />
 
         </>
     );
