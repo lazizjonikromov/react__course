@@ -18,6 +18,7 @@ import Modals from "./modalPlugin/Modals";
 import CarouselAlice from "./PluginCarouselAlice/CarouselAlice";
 import UseEffect from "./hookTutorial/UseEffect";
 import AosTutorial1 from "./scrollEffect/AosTutorial1";
+import LazyLoadImg from "./lazyLoadImage/LazyLoadImg";
 
 
 function App() {
@@ -44,7 +45,9 @@ function App() {
 
             {/* <UseEffect /> */}
 
-            <AosTutorial1 />
+            {/* <AosTutorial1 /> */}
+
+            <LazyLoadImg />
 
         </>
     );
