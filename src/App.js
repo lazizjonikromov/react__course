@@ -17,6 +17,7 @@ import UseState from "./hookTutorial/UseState";
 import Modals from "./modalPlugin/Modals";
 import CarouselAlice from "./PluginCarouselAlice/CarouselAlice";
 import UseEffect from "./hookTutorial/UseEffect";
+import AosTutorial1 from "./scrollEffect/AosTutorial1";
 
 
 function App() {
@@ -41,7 +42,9 @@ function App() {
 
             {/* <CarouselAlice /> */}
 
-            <UseEffect />
+            {/* <UseEffect /> */}
+
+            <AosTutorial1 />
 
         </>
     );
