@@ -26,18 +26,15 @@ import DeleteLesson from "./Methods/DELETE/DeleteLesson";
 import Joke from "./skeletonTutorial/Joke";
 import { Context } from "./contextTut/Context";
 import Display from "./Display";
+import LocalStorage from "./localStorage/LocalStorage";
 // import './skeletonTutorial/style.css';
 
 
 function App() {
 
-    const personName = "Ikromov Laziz";
-
     return (
         <>
-            <Context.Provider value={personName}>
-                <Display />
-            </Context.Provider>
+            <LocalStorage />
         </>
     );
 
